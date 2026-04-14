@@ -1,0 +1,28 @@
+ h1{
+    text-align: center;
+}
+ p{
+    font-family: serif;
+}
+ #primer-parrafo {
+    background-color: #CEE;
+ }
+ em{
+    color: #933 ;
+ }
+ a{
+    outline: 1px solid #333;
+}
+ p.fuente{
+    opacity: 100%;
+    color: #000;
+ }
+ .novelas parrafo{
+    color: rgba(190, 120, 240, 0.6);
+ }
+p.fuente{
+    color: #000;
+}
+.complicado{
+    color: #C62;
+}
