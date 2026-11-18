@@ -1,229 +1,243 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="es">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>TP-7: Funciones en JavaScript</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Artículo | TP7</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX"
+          crossorigin="anonymous">
 </head>
 <body>
-<p>Completar con la implementación de las funciones correspondientes</p>
-<script type="text/javascript">
-// Numeros
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <span class="rounded-circle bg-light me-2" aria-hidden="true"
+                      style="width: 2rem; height: 2rem;"></span>
+                Alumno
+            </a>
+            <!-- navbar-expand-lg mantiene el menú desplegable en mobile y tablet; lo expande en desktop. -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+                    aria-expanded="false" aria-label="Abrir navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Link1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link3</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-// 1- Implementar una función "suma" que retorne la suma de 2 numeros
-function suma(num1, num2) {
-    return num1 + num2;
-}
+    <main>
+        <!-- d-none d-md-block oculta el carousel en mobile; la grilla lo centra y limita en desktop. -->
+        <section class="d-none d-md-block py-3" aria-label="Imágenes destacadas">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10">
+                        <div id="articleCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#articleCarousel" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Diapositiva 1"></button>
+                                <button type="button" data-bs-target="#articleCarousel" data-bs-slide-to="1"
+                                        aria-label="Diapositiva 2"></button>
+                                <button type="button" data-bs-target="#articleCarousel" data-bs-slide-to="2"
+                                        aria-label="Diapositiva 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="ratio ratio-21x9 bg-secondary">
+                                        <img src="A/mundodepiedra.webp" class="w-100 h-100 object-fit-cover"
+                                             alt="Escena de Mundo de piedra">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="ratio ratio-21x9 bg-secondary">
+                                        <img src="A/mundodepiedra2.webp" class="w-100 h-100 object-fit-cover"
+                                             alt="Segunda escena de Mundo de piedra">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="ratio ratio-21x9 bg-secondary">
+                                        <img src="A/mundodepiedra3.webp" class="w-100 h-100 object-fit-cover"
+                                             alt="Tercera escena de Mundo de piedra">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#articleCarousel"
+                                    data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#articleCarousel"
+                                    data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-console.log("1 Resultados de suma:")
-console.log(suma(2,3));               
-console.log(suma(4,4));
-console.log(suma(-10,10));
+        <article class="container-fluid px-3 py-4">
+            <header class="row justify-content-center text-center">
+                <div class="col-12 col-lg-10">
+                    <h1>Mundo de piedra</h1>
+                    <p class="lead">Canserbero</p>
+                    <hr>
+                </div>
+            </header>
 
+            <!-- col-lg-10 offset-lg-1 centra el texto en desktop; en mobile/tablet ocupa todo el ancho útil. -->
+            <section class="row justify-content-center" aria-label="Texto del artículo">
+                <div class="col-12 col-lg-10">
+                    <p>Es tres de abril a las dos de la mañana
+Carlos debe patrullar de noche toda la semana
+Tiene un hijo que ama y una esposa que finge quererla
+Los tres viven en un mundo de piedra
+Se viste y se va en su patrulla policíaca
+A lucir su placa y matracar a todo el que pasa
+Una hora pasa y consigue juntar una paca
+Que, seguramente, gastará con putas en la tasca
+Se hacen las tres y cuarto, Carlos acelera el paso
+Pasa por una esquina y escucha a un muchacho gritando
+Lo estaban asaltando, él solo echa un corto vistazo
+Sin embargo, no hizo caso y siguió manejando
+Rumbo al burdel de siempre se dirigía
+Y mientras conducía, nota que un taxi de cerca lo seguía
+"Han de ser vainas mías", dijo mientras sonreía
+Y al llegar pagó por la mejor prostituta que había
+Una rubia de infarto, la mete para el cuarto
+Entre sus piernas prueba el tacto y comienza el acto
+Pero menos de un minuto escucha unos pasos entrar y
+Murió Carlos ipso facto
+Your heart is made of stone
+My heart is made of stone
+We are living in a stone world
+My heart is made of stone
+Your heart is made of stone
+We are living in a stone world
+Es tres de abril, quince para las dos de la mañana
+Es la noche de la esposa de Carlos, al que le prepara
+Algo de comer y deja su ropa planchada
+Media hora después él se va luego de un beso sin ganas
+Comienza el drama, los celos, la paranoia casi
+"Siga despacio a esa patrulla", ella dijo al taxi
+Una hora estuvieron buscándolo con sigilo
+Luego, siguiéndolo con dirección hacia un prostíbulo
+Acto seguido suena su teléfono
+Era su hijo al que le dijo: "Ahora no puedo", y le colgó
+No pudo hablar por ira de saber lo que vería
+Llegó, entró y preguntó por Carlos, el policía
+Pagó lo que tenía por la llave que abriría el cerrojo
+Además, dijo se uniría en orgía con su esposo
+Abrió y de inmediato, ciega por el enojo
+Del bolso saca un arma y - a Carlos entre sus ojos
+Your heart is made of stone
+My heart is made of stone
+We are living in a stone world
+My heart is made of stone
+Your heart is made of stone
+We are living in a stone world
+Es tres de abril, dos treinta de la mañana
+Hora en que comienza la noche del hijo que en su almohada
+Esconde la marihuana que fuma siempre
+Se despierta y se da cuenta de que en su casa no hay gente
+Así que llama al que le vende y cuadra un trueque
+A las tres y cuarto en la esquina han de verse para abastecerse
+El joven llega puntualmente y, de repente
+Siente un cañón en su frente del jíbaro que trampa le tiende
+Le dice: "Dame la cartera, el reloj y las prendas"
+Cuando ve que pasa una patrulla en plena contienda
+Era el padre del joven que sigue de largo
+Mientras jíbaro le suelta disparos al pecho y a la pierna
+Solamente el teléfono logra esconder
+Y llama a su madre para que lo vaya a socorrer
+Pero al atender, fue lo último que escuchó
+La voz de ella diciendo: "No puedo", y le colgó
+My heart is made of stone
+My heart is made of stone
+We are living in a stone world
+My heart is made of stone
+Your heart is made of stone
+We are living in a stone world
+Un funcionario de la Policía Nacional
+Identificado como Carlos Camacaro de 46 años de edad
+Fue asesinado por su esposa, la ciudadana María Hernández De Camacaro
+En un reconocido local nocturno de la ciudad de Caracas
+La mujer de 43 años de edad se encuentra a la orden de la fiscalía
+En otras noticias, un joven de 17 años fue hallado sin vida
+Esta madrugada en la Parroquia de Antímano
+El joven fue encontrado sin sus pertenencias
+Sin embargo, las autoridades no descartan el ajuste de cuentas
+Continuando con las informaciones
+El país se hunde en la mierda
+Mientras las autoridades no hacen nada al respecto
+Y la sociedad se pierde en una indetenible decadencia de valores</p>
+                </div>
+            </section>
 
-// 2- Implementar una función "elevarAlCubo" que eleve al cubo un numero
+            <!-- col-12 / col-md-6 / col-lg-3 da una, dos y cuatro cards por fila. -->
+            <section class="row justify-content-center" aria-label="Artículos relacionados">
+                <div class="col-12 col-lg-10">
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <article class="card h-100">
+                                <div class="ratio ratio-4x3 bg-secondary" role="img"
+                                     aria-label="Imagen gris de relleno"></div>
+                                <div class="card-body">
+                                    <h2 class="h5 card-title">Título 1</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <a class="btn btn-primary" href="#">Ver más</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <article class="card h-100">
+                                <div class="ratio ratio-4x3 bg-secondary" role="img"
+                                     aria-label="Imagen gris de relleno"></div>
+                                <div class="card-body">
+                                    <h2 class="h5 card-title">Título 2</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <a class="btn btn-primary" href="#">Ver más</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <article class="card h-100">
+                                <div class="ratio ratio-4x3 bg-secondary" role="img"
+                                     aria-label="Imagen gris de relleno"></div>
+                                <div class="card-body">
+                                    <h2 class="h5 card-title">Título 3</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <a class="btn btn-primary" href="#">Ver más</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <article class="card h-100">
+                                <div class="ratio ratio-4x3 bg-secondary" role="img"
+                                     aria-label="Imagen gris de relleno"></div>
+                                <div class="card-body">
+                                    <h2 class="h5 card-title">Título 4</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <a class="btn btn-primary" href="#">Ver más</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
 
-function elevarAlCubo(elevar){
-    return elevar*elevar*elevar;
-}
-
-console.log("2 Resultados de elevarAlCubo:")
-console.log(elevarAlCubo(3)); // 27
-console.log(elevarAlCubo(99)); // 970299
-
-// 3- Implementar una función "restoDivisionEntera" para devolver el resto de una división entera entre un dividendo y un divisor
-// ejemplo: restoDivisionEntera(3,2) retorna 1
-
-function restoDivisionEntera(dividendo, divisor){
-    if(divisor===0){
-        console.log("No se puede dividir por cero");
-    }else{
-        return dividendo%divisor;
-    }
-}
-
-console.log("3 Resultados de restoDivisionEntera:")
-console.log(restoDivisionEntera(1,3)); // 1
-console.log(restoDivisionEntera(2,3)); // 2
-console.log(restoDivisionEntera(3,3)); // 0
-console.log(restoDivisionEntera(4,3)); // 1
-
-
-// 4- Implementar una función "numeroPi" para devolver el numero PI
-// ejemplo: numeroPi() retorna 3,14...
-
-function numeroPi(){
-    const pi=Math.PI;
-    return pi;
-}
-
-console.log("4 Resultado de numeroPi:")
-console.log(numeroPi())
-
-
-// 5- Implementar una función "numeroRandom" para devolver un número random (aleatorio)
-// ejemplo: numeroRandom() retorna 0,123...
-
-function numeroRandom(){
-    return Math.random();
-}
-
-console.log("5 Resultados de numeroRandom:")
-console.log(numeroRandom())
-console.log(numeroRandom())
-console.log(numeroRandom())
-
-
-// 6- Implementar una función "numeroRandomDesdeHasta" para devolver un número random entre 2 valores recibidos como parámetros
-// ejemplo: numeroRandomDesdeHasta(1,6) retorna 3
-
-function numeroRandomDesdeHasta(uno,dos){
-    uno=Math.ceil(uno);
-    dos=Math.floor(dos);
-    return Math.floor(Math.random()*(dos-uno+1))+uno;
-
-}
-
-console.log("6 Resultados de numeroRandomDesdeHasta:")
-console.log(numeroRandomDesdeHasta(1,6))
-console.log(numeroRandomDesdeHasta(2,5))
-console.log(numeroRandomDesdeHasta(3,4))
-
-
-// 7- Implementar una función "esPar" que reciba un número como parámetro y devuelva verdadero si el número es par, o falso si es impar
-// ejemplo: esPar(4) retorna true, esPar(5) retorna false
-
-function esPar(siono){
-    return siono%2===0;
-}
-
-console.log("7 Resultados de esPar:")
-console.log(esPar(4)); // true
-console.log(esPar(5)); // false
-console.log(esPar(0)); // true
-console.log(esPar(-2)); // true
-
-
-// 8- Implementar una función "esPositivo" que reciba un número y devuelva true si el número es positivo, o false si es negativo o cero
-// ejemplo: esPositivo(4) retorna true, esPositivo(-3) retorna false
-
-function esPositivo(siono2){
-    if(siono2>0){
-        return true;
-    }else{
-        return false
-    }
-}
-
-console.log("8 Resultados de esPositivo:")
-console.log(esPositivo(4)); // true
-console.log(esPositivo(-3)); // false
-console.log(esPositivo(0)); // false
-
-// 9- Implementar una función "clasificarNumero" que reciba un número y retorne un mensaje indicando si el número es par o impar, y si es positivo o negativo
-// ejemplo: clasificarNumero(4) retorna "El número 4 es par y positivo."
-// ejemplo: clasificarNumero(-3) retorna "El número -3 es impar y negativo."
-
-function clasificarNumero(clasi){
-    let var1, var2;
-    if(clasi%2===0){
-        var1=" es par";
-    }else{
-        var1=" es impar";
-    }
-    if(clasi===0){
-        var2= " y no es positivo ni negativo";
-    }else if(clasi>0){
-        var2= " y positivo";
-    }else{
-        var2= " y negativo";
-    }
-    return "El número "+clasi+var1+var2;
-}
-
-console.log("9 Resultados de clasificarNumero:")
-console.log(clasificarNumero(4)); // "El número 4 es par y positivo."
-console.log(clasificarNumero(-3)); // "El número -3 es impar y negativo."
-console.log(clasificarNumero(0)); // "El número 0 es par y no positivo."
-
-// Cadenas de Caracteres
-
-// 10- Implementar una función "transformarMayuscula" que transforme a mayúscula la cadena de caracteres recibida como parámetro
-// ejemplo: transformarMayuscula("Plataformas Móviles") retorna "PLATAFORMAS MÓVILES"
-function transformarMayuscula(palabras){
-    return palabras.toUpperCase();
-}
-
-console.log("10 Resultados de transformarMayuscula:")
-console.log(transformarMayuscula("Plataformas Móviles"))
-console.log(transformarMayuscula("hola mundo"))
-console.log(transformarMayuscula("abc"))
-
-
-// 11- Implementar una función "primeraLetra" que nos devuelva la inicial de la cadena de caracteres recibida como parámetro
-// ejemplo: primeraLetra("Plataformas") retorna "P"
-
-function primeraLetra(palabras){
-    return palabras.charAt(0);
-}
-
-console.log("11 Resultados de primeraLetra:")
-console.log(primeraLetra("Plataformas Móviles"))
-console.log(primeraLetra("hola mundo"))
-console.log(primeraLetra("abc"))
-
-
-// 12- Implementar una función "sinPrimeraLetra" que nos devuelva la cadena de caracteres recibida como parámetro sin la primera letra
-// ejemplo: sinPrimeraLetra("Plataformas") retorna "lataformas"
-
-function sinPrimeraLetra(palabras){
-    return palabras.slice(1);
-}
-
-console.log("12 Resultados de sinPrimeraLetra:")
-console.log(sinPrimeraLetra("Plataformas Móviles"))
-console.log(sinPrimeraLetra("hola mundo"))
-console.log(sinPrimeraLetra("abc"))
-
-
-// 13- Implementar una función "primeraLetraMayuscula" que devuelve la cadena de caracteres recibida, pero  con su primera letra en mayúscula
-// ejemplo: primeraLetraMayuscula("plataformas") retorna "Plataformas"
-
-function primeraLetraMayuscula(palabras){
-    return palabras.charAt(0).toUpperCase() + palabras.slice(1);
-}
-
-console.log("13 Resultados de primeraLetraMayuscula:")
-console.log(primeraLetraMayuscula("plataformas móviles"))
-console.log(primeraLetraMayuscula("hola mundo"))
-console.log(primeraLetraMayuscula("abc"))
-
-
-// 14- Implementar una función "terminaCon" que devuelve verdadero o falso si la palabra termina con la terminación recibida
-// ejemplo: terminaCon("plataformas", "mas") retorna true
-
-function terminaCon(pala, termi){
-    return pala.endsWith(termi);
-}
-
-console.log("14 Resultados de terminaCon:")
-console.log(terminaCon("hola", "a")); // true
-console.log(terminaCon("hola", "o")); // false
-console.log(terminaCon("plataformas", "mas")); // true
-console.log(terminaCon("plataformas", "más")); // false
-
-// 15- Implementar una función "palabraInvertida" que devuelva la palabra invertida
-// ejemplo: palabraInvertida("hola") retorna "aloh";
-
-function palabraInvertida(palabra){
-    return palabra.split('').reverse().join('');
-}
-
-console.log("15 Resultados de palabraInvertida:")
-console.log(palabraInvertida("plataformas móviles"))
-console.log(palabraInvertida("hola mundo"))
-console.log(palabraInvertida("abc"))
-
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+            crossorigin="anonymous"></script>
 </body>
 </html>
