@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pokédex | TP16</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+            crossorigin="anonymous" defer></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="bg-dark text-white py-4">
+        <div class="container">
+            <h1 class="display-5 mb-2">Pokédex</h1>
+            <p class="mb-0">Explorá los Pokémon, sus tipos, habilidades y movimientos.</p>
+        </div>
+    </header>
+
+    <main class="container py-4">
+        <p id="cantidad-pokemon" class="text-body-secondary" aria-live="polite"></p>
+
+        <div id="alerta-error" class="alert alert-warning d-none" role="alert">
+            <span id="mensaje-error"></span>
+            <button type="button" class="btn btn-sm btn-outline-dark ms-2 d-none" id="reintentar-lista">
+                Reintentar
+            </button>
+        </div>
+
+        <div id="estado-carga" class="d-flex align-items-center gap-2 my-4" role="status" aria-live="polite">
+            <span class="spinner-border spinner-border-sm text-primary" aria-hidden="true"></span>
+            <span id="texto-carga">Cargando Pokémon...</span>
+        </div>
+
+        <section id="pokemon-grid" class="row g-3" aria-label="Listado de Pokémon"></section>
+
+        <div class="text-center my-4">
+            <button type="button" id="cargar-mas" class="btn btn-primary d-none">
+                Cargar más Pokémon
+            </button>
+        </div>
+    </main>
+
+    <div class="modal fade" id="modal-pokemon" tabindex="-1"
+         aria-labelledby="modal-titulo" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="modal-titulo"></h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-3 align-items-start">
+                        <div class="col-12 col-md-5 text-center">
+                            <img id="modal-imagen" class="img-fluid pokemon-detail-image" alt="">
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <p><strong>Tipos:</strong> <span id="modal-tipos"></span></p>
+                            <p><strong>Habilidades:</strong> <span id="modal-habilidades"></span></p>
+                            <p><strong>Altura:</strong> <span id="modal-altura"></span></p>
+                            <p><strong>Peso:</strong> <span id="modal-peso"></span></p>
+                            <h3 class="h6 mt-3">Movimientos</h3>
+                            <ul id="modal-movimientos" class="list-group"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

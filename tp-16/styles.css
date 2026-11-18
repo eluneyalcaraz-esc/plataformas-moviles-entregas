@@ -1,0 +1,18 @@
+.pokemon-image {
+    height: 180px;
+    object-fit: contain;
+    background-color: var(--bs-tertiary-bg);
+}
+
+.pokemon-detail-image {
+    max-height: 280px;
+    object-fit: contain;
+}
+
+.pokemon-card {
+    transition: transform 120ms ease-in-out;
+}
+
+.pokemon-card:hover {
+    transform: translateY(-2px);
+}
