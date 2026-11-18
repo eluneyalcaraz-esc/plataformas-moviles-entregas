@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Artículo | TP7</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX"
+          crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <span class="rounded-circle bg-light me-2" aria-hidden="true"
+                      style="width: 2rem; height: 2rem;"></span>
+                Alumno
+            </a>
+            <!-- navbar-expand-lg mantiene el menú desplegable en mobile y tablet; lo expande en desktop. -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+                    aria-expanded="false" aria-label="Abrir navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Link1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link3</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- d-none d-md-block oculta el carousel en mobile; la grilla lo centra y limita en desktop. -->
+        <section class="d-none d-md-block py-3" aria-label="Imágenes destacadas">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10">
+                        <div id="articleCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#articleCarousel" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Diapositiva 1"></button>
+                                <button type="button" data-bs-target="#articleCarousel" data-bs-slide-to="1"
+                                        aria-label="Diapositiva 2"></button>
+                                <button type="button" data-bs-target="#articleCarousel" data-bs-slide-to="2"
+                                        aria-label="Diapositiva 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="ratio ratio-21x9 bg-secondary">
+                                        <img src="A/mundodepiedra.webp" class="w-100 h-100 object-fit-cover"
+                                             alt="Escena de Mundo de piedra">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="ratio ratio-21x9 bg-secondary">
+                                        <img src="A/mundodepiedra2.webp" class="w-100 h-100 object-fit-cover"
+                                             alt="Segunda escena de Mundo de piedra">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="ratio ratio-21x9 bg-secondary">
+                                        <img src="A/mundodepiedra3.webp" class="w-100 h-100 object-fit-cover"
+                                             alt="Tercera escena de Mundo de piedra">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#articleCarousel"
+                                    data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#articleCarousel"
+                                    data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <article class="container-fluid px-3 py-4">
+            <header class="row justify-content-center text-center">
+                <div class="col-12 col-lg-10">
+                    <h1>Mundo de piedra</h1>
+                    <p class="lead">Canserbero</p>
+                    <hr>
+                </div>
+            </header>
+
+            <!-- col-lg-10 offset-lg-1 centra el texto en desktop; en mobile/tablet ocupa todo el ancho útil. -->
+            <section class="row justify-content-center" aria-label="Texto del artículo">
+                <div class="col-12 col-lg-10">
+                    <p>Es tres de abril a las dos de la mañana
+Carlos debe patrullar de noche toda la semana
+Tiene un hijo que ama y una esposa que finge quererla
+Los tres viven en un mundo de piedra
+Se viste y se va en su patrulla policíaca
+A lucir su placa y matracar a todo el que pasa
+Una hora pasa y consigue juntar una paca
+Que, seguramente, gastará con putas en la tasca
+Se hacen las tres y cuarto, Carlos acelera el paso
+Pasa por una esquina y escucha a un muchacho gritando
+Lo estaban asaltando, él solo echa un corto vistazo
+Sin embargo, no hizo caso y siguió manejando
+Rumbo al burdel de siempre se dirigía
+Y mientras conducía, nota que un taxi de cerca lo seguía
+"Han de ser vainas mías", dijo mientras sonreía
+Y al llegar pagó por la mejor prostituta que había
+Una rubia de infarto, la mete para el cuarto
+Entre sus piernas prueba el tacto y comienza el acto
+Pero menos de un minuto escucha unos pasos entrar y
+Murió Carlos ipso facto
+Your heart is made of stone
+My heart is made of stone
+We are living in a stone world
+My heart is made of stone
+Your heart is made of stone
+We are living in a stone world
+Es tres de abril, quince para las dos de la mañana
+Es la noche de la esposa de Carlos, al que le prepara
+Algo de comer y deja su ropa planchada
+Media hora después él se va luego de un beso sin ganas
+Comienza el drama, los celos, la paranoia casi
+"Siga despacio a esa patrulla", ella dijo al taxi
+Una hora estuvieron buscándolo con sigilo
+Luego, siguiéndolo con dirección hacia un prostíbulo
+Acto seguido suena su teléfono
+Era su hijo al que le dijo: "Ahora no puedo", y le colgó
+No pudo hablar por ira de saber lo que vería
+Llegó, entró y preguntó por Carlos, el policía
+Pagó lo que tenía por la llave que abriría el cerrojo
+Además, dijo se uniría en orgía con su esposo
+Abrió y de inmediato, ciega por el enojo
+Del bolso saca un arma y - a Carlos entre sus ojos
+Your heart is made of stone
+My heart is made of stone
+We are living in a stone world
+My heart is made of stone
+Your heart is made of stone
+We are living in a stone world
+Es tres de abril, dos treinta de la mañana
+Hora en que comienza la noche del hijo que en su almohada
+Esconde la marihuana que fuma siempre
+Se despierta y se da cuenta de que en su casa no hay gente
+Así que llama al que le vende y cuadra un trueque
+A las tres y cuarto en la esquina han de verse para abastecerse
+El joven llega puntualmente y, de repente
+Siente un cañón en su frente del jíbaro que trampa le tiende
+Le dice: "Dame la cartera, el reloj y las prendas"
+Cuando ve que pasa una patrulla en plena contienda
+Era el padre del joven que sigue de largo
+Mientras jíbaro le suelta disparos al pecho y a la pierna
+Solamente el teléfono logra esconder
+Y llama a su madre para que lo vaya a socorrer
+Pero al atender, fue lo último que escuchó
+La voz de ella diciendo: "No puedo", y le colgó
+My heart is made of stone
+My heart is made of stone
+We are living in a stone world
+My heart is made of stone
+Your heart is made of stone
+We are living in a stone world
+Un funcionario de la Policía Nacional
+Identificado como Carlos Camacaro de 46 años de edad
+Fue asesinado por su esposa, la ciudadana María Hernández De Camacaro
+En un reconocido local nocturno de la ciudad de Caracas
+La mujer de 43 años de edad se encuentra a la orden de la fiscalía
+En otras noticias, un joven de 17 años fue hallado sin vida
+Esta madrugada en la Parroquia de Antímano
+El joven fue encontrado sin sus pertenencias
+Sin embargo, las autoridades no descartan el ajuste de cuentas
+Continuando con las informaciones
+El país se hunde en la mierda
+Mientras las autoridades no hacen nada al respecto
+Y la sociedad se pierde en una indetenible decadencia de valores</p>
+                </div>
+            </section>
+
+            <!-- col-12 / col-md-6 / col-lg-3 da una, dos y cuatro cards por fila. -->
+            <section class="row justify-content-center" aria-label="Artículos relacionados">
+                <div class="col-12 col-lg-10">
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <article class="card h-100">
+                                <div class="ratio ratio-4x3 bg-secondary" role="img"
+                                     aria-label="Imagen gris de relleno"></div>
+                                <div class="card-body">
+                                    <h2 class="h5 card-title">Título 1</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <a class="btn btn-primary" href="#">Ver más</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <article class="card h-100">
+                                <div class="ratio ratio-4x3 bg-secondary" role="img"
+                                     aria-label="Imagen gris de relleno"></div>
+                                <div class="card-body">
+                                    <h2 class="h5 card-title">Título 2</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <a class="btn btn-primary" href="#">Ver más</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <article class="card h-100">
+                                <div class="ratio ratio-4x3 bg-secondary" role="img"
+                                     aria-label="Imagen gris de relleno"></div>
+                                <div class="card-body">
+                                    <h2 class="h5 card-title">Título 3</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <a class="btn btn-primary" href="#">Ver más</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <article class="card h-100">
+                                <div class="ratio ratio-4x3 bg-secondary" role="img"
+                                     aria-label="Imagen gris de relleno"></div>
+                                <div class="card-body">
+                                    <h2 class="h5 card-title">Título 4</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <a class="btn btn-primary" href="#">Ver más</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+            crossorigin="anonymous"></script>
+</body>
+</html>
